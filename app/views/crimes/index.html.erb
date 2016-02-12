@@ -1,0 +1,8 @@
+<h1>Chicago Crimes </h1>
+<% @crimes.each do |crime| %>
+  <h2>Case#: <%= crime["case_number"] %></h2>
+  <h2>Crime:<%= crime["primary_type"] %></h2>
+  <h2>Block: <%= crime["block"] %></h2>
+  <h2>Ward: <%= crime["ward"] %></h2>
+  <hr>
+<% end %>
